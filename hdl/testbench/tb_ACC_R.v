@@ -186,6 +186,9 @@ endtask
 //  Main
 // ===========================================================================
 initial begin
+    $dumpfile("tb_ACC_R.vcd");
+    $dumpvars(0, tb_ACC_R);
+
     clk = 0; rstn = 0;
     i_wen = 0; i_mode = 0; i_data = 0;
     pass_count = 0; fail_count = 0; rand_fail_print = 0;

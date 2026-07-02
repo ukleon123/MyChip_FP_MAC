@@ -60,6 +60,9 @@ task check;
 endtask
 
 initial begin
+    $dumpfile("tb_ACC_adder_overflow.vcd");
+    $dumpvars(0, tb_ACC_adder_overflow);
+
     pass = 0; fail = 0;
     seed = 32'hABCD_0001;
 

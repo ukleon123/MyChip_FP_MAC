@@ -115,6 +115,9 @@ endtask
 //  Main
 // ===========================================================================
 initial begin
+    $dumpfile("tb_ACC_adder.vcd");
+    $dumpvars(0, tb_ACC_adder);
+
     pass_count = 0;
     fail_count = 0;
     seed       = 32'h1234_5678;

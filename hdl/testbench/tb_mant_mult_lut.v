@@ -73,6 +73,9 @@ endtask
 //  Main
 // ===========================================================================
 initial begin
+    $dumpfile("tb_mant_mult_lut.vcd");
+    $dumpvars(0, tb_mant_mult_lut);
+
     pass_count = 0;
     fail_count = 0;
     comm_fail  = 0;
